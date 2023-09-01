@@ -6,7 +6,7 @@ This is the repository that contains source code for the [EAT website](https://e
 If you find EAT useful for your work please cite:
 ```
 @article{yuan2023eat
-  author    = {Gan, Yuan and Yang, Zongxin and Yue, Xihang and Sun, Lingyun and Yi, Yang},    
+  author    = {Gan, Yuan and Yang, Zongxin and Yue, Xihang and Sun, Lingyun and Yang, Yi},    
   title     = {Efficient Emotional Adaptation for Audio-driven Talking-Head Generation},
   journal   = {ICCV},
   year      = {2023},
