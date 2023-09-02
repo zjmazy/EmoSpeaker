@@ -246,11 +246,11 @@
                 Here's an overview of the EAT model:
             </p>
             <ol>
-                <li><strong>(a)</strong> The Audio-to-Expression Transformer (A2ET) transfers latent source image representation, 
-                  source audio, and head pose sequences to 3D expression deformation.</li>
-                <li><strong>(b)</strong> The emotional guidance is injected into A2ET, Emotional Deformation Network (EDN), and 
-                  Emotional Adaptation Module (EAM) for emotional talking-head generation, presented in dashed lines.</li>
-                <li><strong>(c)</strong> The RePos-Net takes the 3D source keypoints and driven keypoints to generate frames.</li>
+                <strong>(a)</strong> The Audio-to-Expression Transformer (A2ET) transfers latent source image representation, 
+                  source audio, and head pose sequences to 3D expression deformation.
+                <strong>(b)</strong> The emotional guidance is injected into A2ET, Emotional Deformation Network (EDN), and 
+                  Emotional Adaptation Module (EAM) for emotional talking-head generation, presented in dashed lines.
+                <strong>(c)</strong> The RePos-Net takes the 3D source keypoints and driven keypoints to generate frames.
             </ol>
             <p>
                 Please refer to our paper for more details.
@@ -263,6 +263,28 @@
 
   </div>
 </section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Main Comparison</h1>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-res1">
+          <video poster="" id="compres1" controls loop playsinline height="100%">
+            <source src="./static/videos/compare_res1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-res2">
+          <video poster="" id="compres2" controls loop playsinline height="100%">
+            <source src="./static/videos/compare_res2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <footer class="footer">
   <div class="container">
