@@ -134,4 +134,31 @@ body {
 }
 
 
+#interpolation-video-wrapper {
+  width: 100%;
+  /* 可能需要添加一些新的样式来更好地适应视频元素，例如： */
+  height: auto; /* 或者您可以指定一个固定的高度 */
+  /* overflow: hidden; 防止视频溢出容器 */
+}
 
+#interpolation-video-wrapper video {
+  width: 100%; /* 使视频填充整个容器 */
+  border-radius: 5px; /* 保持与之前图像元素的边框半径一致 */
+}
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
