@@ -1,6 +1,6 @@
 # EAT
 
-This is the repository that contains source code for the [EAT website](https://eat.github.io).
+This is the repository that contains source code for the [EAT website](https://yuangan.github.io/eat).
 
 
 If you find EAT useful for your work please cite:
