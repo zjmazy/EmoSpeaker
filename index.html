@@ -2,338 +2,292 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Efficient Emotional Adaptation for Audio-driven Talking-Head Generation.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Efficient Emotional Adaptation for Audio-driven Talking-Head Generation</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon_eat.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon_hap.svg">
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Efficient Emotional Adaptation for Audio-driven Talking-Head Generation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="yuangan.github.io">Yuan Gan</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a href="https://z-x-yang.github.io/">Zongxin Yang</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              Xihang Yue<sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              Lingyun Sun<sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN">Yi Yang</a><sup>1,2</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>ReLER, CCAI, Zhejiang University</span><br>
-            <span class="author-block"><sup>2</sup>College of Computer Science and Technolog, Zhejiang University</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-<!--               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=lp2nSLZp-88"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Supp</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/yuangan/EAT_code"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-<!--               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <section class="hero">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/web_intro2.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">EAT</span> generates emotional talking-head videos with input audio, head pose and source image.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Audio-driven talking-head synthesis is a popular research topic
-            for virtual human-related applications. 
-            However, the inflexibility and inefficiency of existing methods, which 
-            necessitate expensive end-to-end training to transfer emotions from guidance 
-            videos to talking-head predictions, are significant limitations. 
-          </p>
-          <p>
-            In this work, we propose the Emotional Adaptation for Audio-driven Talking-head (EAT) method, 
-            which transforms emotion-agnostic talking-head models into emotion-controllable ones 
-            in a cost-effective and efficient manner through parameter-efficient adaptations. 
-            Our approach utilizes a pretrained emotion-agnostic talking-head transformer and introduces 
-            three lightweight adaptations (the Deep Emotional Prompts, Emotional Deformation Network, and 
-            Emotional Adaptation Module) from different perspectives to enable precise and realistic 
-            emotion controls. 
-
-          </p>
-          <p>
-            Our experiments demonstrate that our approach achieves state-of-the-art performance on 
-            widely-used benchmarks, including LRW and MEAD. 
-            Additionally, our parameter-efficient adaptations exhibit remarkable generalization ability, 
-            even in scenarios where emotional training videos are scarce or nonexistent.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-<!--     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Overview. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Overview</h2>
-        <img src="./static/images/overview.png" alt="Overview of EAT" />
-
-          <div class="content has-text-justified">
-            Overview of our EAT,
-            <strong>(a)</strong> The Audio-to-Expression Transformer (A2ET) transfers latent source image representation, 
-              source audio, and head pose sequences to 3D expression deformation.
-            <strong>(b)</strong> The emotional guidance is injected into A2ET, Emotional Deformation Network (EDN), and 
-              Emotional Adaptation Module (EAM) for emotional talking-head generation, presented in dashed lines.
-            <strong>(c)</strong> The RePos-Net takes the 3D source keypoints and driven keypoints to generate frames.
-            <p>
-                Please refer to our paper for more details.
-            </p>
-        </div>
-
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-  </div>
-</section>
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-      <h2 class="title is-3">Main Comparison</h2>
-      <div class="hero-body">
-      <video id="teaser" controls playsinline height="80%">
-        <source src="./static/videos/compare_res1.mp4"
-                type="video/mp4">
-      </video>
-
-      <video id="teaser" controls playsinline height="80%">
-        <source src="./static/videos/compare_res2.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</div>
-  </div>
-</section> -->
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Main Comparison. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Main Comparison</h2>
-        <div class="hero-body">
-          <div id="comparison-carousel" class="carousel results-carousel">
-            <div class="item item-compare1">
-              <video id="teaser1" controls playsinline height="80%">
-                <source src="./static/videos/compare_res1.mp4" type="video/mp4">
-              </video>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Efficient Emotional Adaptation for Audio-driven Talking-Head Generation
+            <p>(EAT <img src="./static/images/favicon_eat.png" style="width: 45px;" />)</p></h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="yuangan.github.io">Yuan Gan</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://z-x-yang.github.io/">Zongxin Yang</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                Xihang Yue<sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                Lingyun Sun<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN">Yi Yang</a><sup>1,2</sup>,
+              </span>
             </div>
-            <div class="item item-compare2">
-              <video id="teaser2" controls playsinline height="80%">
-                <source src="./static/videos/compare_res2.mp4" type="video/mp4">
-              </video>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>ReLER, CCAI, Zhejiang University</span><br>
+              <span class="author-block"><sup>2</sup>College of Computer Science and Technolog, Zhejiang University</span>
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+  <!--               <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=lp2nSLZp-88"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Supp</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yuangan/EAT_code"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+                <!-- Dataset Link. -->
+  <!--               <span class="link-block">
+                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                    </a> -->
+              </div>
+  
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/web_intro2.mp4"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">EAT</span> generates emotional talking-head videos with input audio, head pose and source image.
+        </h2>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Audio-driven talking-head synthesis is a popular research topic
+              for virtual human-related applications. 
+              However, the inflexibility and inefficiency of existing methods, which 
+              necessitate expensive end-to-end training to transfer emotions from guidance 
+              videos to talking-head predictions, are significant limitations. 
+            </p>
+            <p>
+              In this work, we propose the Emotional Adaptation for Audio-driven Talking-head (EAT) method, 
+              which transforms emotion-agnostic talking-head models into emotion-controllable ones 
+              in a cost-effective and efficient manner through parameter-efficient adaptations. 
+              Our approach utilizes a pretrained emotion-agnostic talking-head transformer and introduces 
+              three lightweight adaptations (the Deep Emotional Prompts, Emotional Deformation Network, and 
+              Emotional Adaptation Module) from different perspectives to enable precise and realistic 
+              emotion controls. 
+  
+            </p>
+            <p>
+              Our experiments demonstrate that our approach achieves state-of-the-art performance on 
+              widely-used benchmarks, including LRW and MEAD. 
+              Additionally, our parameter-efficient adaptations exhibit remarkable generalization ability, 
+              even in scenarios where emotional training videos are scarce or nonexistent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  
+      <!-- Paper video. -->
+  <!--     <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Overview. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <img src="./static/images/overview.png" alt="Overview of EAT" />
+  
+            <div class="content has-text-justified">
+              Overview of our EAT,
+              <strong>(a)</strong> The Audio-to-Expression Transformer (A2ET) transfers latent source image representation, 
+                source audio, and head pose sequences to 3D expression deformation.
+              <strong>(b)</strong> The emotional guidance is injected into A2ET, Emotional Deformation Network (EDN), and 
+                Emotional Adaptation Module (EAM) for emotional talking-head generation, presented in dashed lines.
+              <strong>(c)</strong> The RePos-Net takes the 3D source keypoints and driven keypoints to generate frames.
+              <p>
+                  Please refer to our paper for more details.
+              </p>
+          </div>
+  
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3">Quality Comparison</h3>
+          Qualitative comparison with baselines.
+          <div class="hero-body">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-compare1">
+                <video id="teaser1" controls playsinline height="100%">
+                  <source src="./static/videos/compare_res1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-compare2">
+                <video id="teaser2" controls playsinline height="100%">
+                  <source src="./static/videos/compare_res2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yuan2023eat
+        author    = {Gan, Yuan and Yang, Zongxin and Yue, Xihang and Sun, Lingyun and Yang, Yi},    
+        title     = {Efficient Emotional Adaptation for Audio-driven Talking-Head Generation},
+        journal   = {ICCV},
+        year      = {2023},
+      }</code></pre>
+    </div>
 </section>
+<!--End BibTex citation -->
 
-
-
-
-<footer class="footer">
+  <footer class="footer">
   <div class="container">
-<!--     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+
           <p>
-            <a
-              href="https://github.com/nerfies/nerfies.github.io">Template adapted from Nerfies</a>
-            
-            
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
           </p>
+
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-</body>
-</html>
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
