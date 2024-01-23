@@ -1,9 +1,9 @@
-# EAT
+# EmoSpeaker
 
-This is the repository that contains source code for the [EAT website](https://yuangan.github.io/eat).
+This is the repository that contains source code for the [EmoSpeaker website](https://zjmazy.github.io/emospeaker).
 
 
-If you find EAT useful for your work please cite:
+<!-- If you find EAT useful for your work please cite:
 ```
 @InProceedings{Gan_2023_ICCV,
     author    = {Gan, Yuan and Yang, Zongxin and Yue, Xihang and Sun, Lingyun and Yang, Yi},
@@ -13,7 +13,7 @@ If you find EAT useful for your work please cite:
     year      = {2023},
     pages     = {22634-22645}
 }
-```
+``` -->
 
 
 # Website License
