@@ -232,10 +232,10 @@
           <h3 class="title is-3">Quality Comparison</h3>
           <div class="content has-text-justified">
             <p>
-              We compare EAT with recent works in emotional talking-head generation.
+              We compare EmoSpeaker with recent works in emotional talking-head generation.
             </p>
           </div>
-            <div id="results-carousel" class="carousel results-carousel">
+            <!-- <div id="results-carousel" class="carousel results-carousel">
               <div class="item item-compare1">
                 <video id="teaser1" controls playsinline height="100%">
                   <source src="./static/videos/compare_res1.mp4" type="video/mp4">
@@ -245,6 +245,75 @@
                 <video id="teaser2" controls playsinline height="100%">
                   <source src="./static/videos/compare_res2.mp4" type="video/mp4">
                 </video>
+              </div>
+            </div>
+
+            <br/> -->
+            <div class="content has-text-centered">
+              <video id="replay-video"
+                     controls
+                     muted
+                     preload
+                     playsinline
+                     width="100%">
+                <source src="./static/videos/compare_res1.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <br/>
+
+            <div class="columns is-vcentered interpolation-panel">
+              <div class="column is-4 has-text-centered">
+                <img src="./static/images/cremad-1.png" alt="Image Alt Text" height="80%">
+                <p>cremad ref image</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/interpolation_video/000015.mp4" type="video/mp4">
+                </video>
+                <p>EmoSpeaker</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/videos/cremad-1-diff.mp4" type="video/mp4">
+                </video>
+                <p class="is-bold">EAMM</p>
+              </div>
+            </div>
+            <div class="columns is-vcentered interpolation-panel">
+              <div class="column is-4 has-text-centered">
+                <img src="./static/images/cremad-2.png" alt="Image Alt Text" height="80%">
+                <p>cremad ref image</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/interpolation_video/000015.mp4" type="video/mp4">
+                </video>
+                <p>EmoSpeaker</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/videos/cremad-2-diff.mp4" type="video/mp4">
+                </video>
+                <p class="is-bold">EAMM</p>
+              </div>
+            </div>
+            <div class="columns is-vcentered interpolation-panel">
+              <div class="column is-4 has-text-centered">
+                <img src="./static/images/cremad-3.png" alt="Image Alt Text" height="80%">
+                <p>cremad ref image</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/interpolation_video/000015.mp4" type="video/mp4">
+                </video>
+                <p>EmoSpeaker</p>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <video id="teaser1" autoplay muted loop playsinline height="80%">
+                  <source src="./static/videos/cremad-3-diff.mp4" type="video/mp4">
+                </video>
+                <p class="is-bold">EAMM</p>
               </div>
             </div>
         </div>
@@ -290,19 +359,18 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <!-- Interpolating. -->
-        <h3 class="title is-3">Interpolating States</h3>
+        <h3 class="title is-3">Emotional Granularity</h3>
         <div class="content has-text-justified">
           <p>
-            EAT can also generate talking-head by interpolating the latent embedding between different emotions. Use the slider here to linearly interpolate between the left emotion and the right
-            emotion.
+            EmoSpeaker can also generate talking-head of different emotional intensities by adjusting the fine-grained emotion. Use the slider here to adjust the fine-grained.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-4 has-text-centered">
-            <video id="teaser1" controls playsinline height="80%">
-              <source src="./static/interpolation_video/000000.mp4" type="video/mp4">
+            <video id="teaser1" autoplay muted playsinline height="80%">
+              <source src="./static/interpolation_video/000015.mp4" type="video/mp4">
             </video>
-            <p>Contempt</p>
+            <p>Happy Level 1</p>
           </div>
           <div class="column interpolation-video-column">
             <div id="interpolation-video-wrapper">
@@ -310,54 +378,17 @@
             </div>
             <input class="slider is-fullwidth is-large is-info"
                    id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
+                   step="1" min="0" max="15" value="0" type="range">
           </div>
           <div class="column is-4 has-text-centered">
-            <video id="teaser2" controls playsinline height="80%">
-              <source src="./static/interpolation_video/000099.mp4" type="video/mp4">
+            <video id="teaser1" autoplay muted playsinline height="80%">
+              <source src="./static/interpolation_video/000029.mp4" type="video/mp4">
             </video>
-            <p class="is-bold">Sad</p>
+            <p class="is-bold">Happy Level 15</p>
           </div>
         </div>
         <br/>
         <!--/ Interpolating. -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Zero-Shot Editting</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using EAT and pre-trained CLIP model, you can edit the expression of a talking-head video with a text.
-          </p>
-        </div>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-clip1">
-              <video id="teaser1" controls playsinline height="100%">
-                <source src="./static/videos/zero3.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-clip2">
-              <video id="teaser2" controls playsinline height="100%">
-                <source src="./static/videos/zero4.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-clip3">
-              <video id="teaser3" controls playsinline height="100%">
-                <source src="./static/videos/zero1.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-clip4">
-              <video id="teaser3" controls playsinline height="100%">
-                <source src="./static/videos/zero2.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
       </div>
     </div>
   </div>
