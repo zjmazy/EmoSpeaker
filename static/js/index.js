@@ -24,7 +24,12 @@ function setInterpolationVideo(i) {
 	video.ondragstart = function() { return false; };
 	video.oncontextmenu = function() { return false; };
 	$('#interpolation-video-wrapper').empty().append(video);
-}
+	$('#interpolation-video-wrapper video').get(0).play();
+	$("#teaser11").get(0).currentTime = 0;
+	$("#teaser11").get(0).play();
+	$("#teaser12").get(0).currentTime = 0;
+	$("#teaser12").get(0).play();
+   }
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
