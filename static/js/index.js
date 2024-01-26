@@ -15,7 +15,7 @@ function preloadInterpolationVideos() {
 		interp_videos[i].autoplay  = true;
 		interp_videos[i].muted  = true;
 		interp_videos[i].loop  = true;
-		// interp_videos[i].playsinline = true;
+		interp_videos[i].playsinline = true;
 	}
 }
 

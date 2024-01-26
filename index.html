@@ -139,27 +139,27 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Audio-driven talking-head synthesis is a popular research topic
-              for virtual human-related applications. 
-              However, the inflexibility and inefficiency of existing methods, which 
-              necessitate expensive end-to-end training to transfer emotions from guidance 
-              videos to talking-head predictions, are significant limitations. 
+              Generating fine-grained facial animations that accurately portray emotional expressions using 
+              only a portrait and an audio recording presents a challenge. Existing methods often rely on 
+              multiple emotional portraits or a video clip to capture different emotional expressions, 
+              while some utilize emotion labels for animation generation. However, these approaches lack 
+              precise control over facial emotional expression and face issues with lip synchronization accuracy. 
             </p>
             <p>
-              In this work, we propose the Emotional Adaptation for Audio-driven Talking-head (EAT) method, 
-              which transforms emotion-agnostic talking-head models into emotion-controllable ones 
-              in a cost-effective and efficient manner through parameter-efficient adaptations. 
-              Our approach utilizes a pretrained emotion-agnostic talking-head transformer and introduces 
-              three lightweight adaptations (the Deep Emotional Prompts, Emotional Deformation Network, and 
-              Emotional Adaptation Module) from different perspectives to enable precise and realistic 
-              emotion controls. 
-  
+              In order to address these challenges, we propose an visual attribute-guided audio decoupler. 
+              This enables the obtention of content vectors solely related to the audio content, enhancing 
+              the stability of subsequent lip movement coefficient predictions. To achieve more precise 
+              emotional expression, we introduce a fine-grained emotion coefficient prediction mechanism. 
+              Additionally, we propose an emotion intensity control method using a fine-grained emotion matrix. 
+              Through these, effective control over emotional expression in the generated videos and finer 
+              classification of emotion intensity are accomplished. Subsequently, a series of 3DMM coefficient 
+              generation networks are designed to predict 3D coefficients, followed by the utilization of a 
+              rendering network to generate the final video.   
             </p>
             <p>
-              Our experiments demonstrate that our approach achieves state-of-the-art performance on 
-              widely-used benchmarks, including LRW and MEAD. 
-              Additionally, our parameter-efficient adaptations exhibit remarkable generalization ability, 
-              even in scenarios where emotional training videos are scarce or nonexistent.
+              Our experimental results demonstrate that our 
+              proposed method, EmoSpeaker, outperforms existing emotional talking face generation methods in 
+              terms of expression variation and lip synchronization.
             </p>
           </div>
         </div>
@@ -186,15 +186,14 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Overview</h2>
-          <img src="./static/images/overview.png" alt="Overview of EAT" />
+          <img src="./static/images/overview.png" alt="Overview of EmoSpeaker" />
   
             <div class="content has-text-justified">
-              Overview of our EAT,
-              <strong>(a)</strong> The Audio-to-Expression Transformer (A2ET) transfers latent source image representation, 
-                source audio, and head pose sequences to 3D expression deformation.
-              <strong>(b)</strong> The emotional guidance is injected into A2ET, Emotional Deformation Network (EDN), and 
-                Emotional Adaptation Module (EAM) for emotional talking-head generation, presented in dashed lines.
-              <strong>(c)</strong> The RePos-Net takes the 3D source keypoints and driven keypoints to generate frames.
+              The overview of EmoSpeaker,
+              <strong>(a)</strong> Source Coeff Extraction: Extract 68 facial keypoints and 3DMM coefficients from the reference image for training and generation purposes.
+              <strong>(b)</strong> Visual Attribute-Guided Audio Decoupler: Input the audio into three consecutive audio encoders to obtain separate low-level and high-level audio encodings.   Utilizing a shared AU decoder to obtain AU-related features and compare them with AU coefficients extracted from the training videos for comparative learning.
+              <strong>(c)</strong> Fine-grained Emotion Coefficient Prediction Mechanism: Manually specify emotion categories and intensity labels.   During inference, adjust the sliding window size of the input audio to obtain a fine-grained emotion vector synchronized with the audio.   Combine them with content vectors to predict expression, emotion, and pose coefficients through ExpNet, EmoNet and PoseNet.
+              <strong>(d)</strong> Emotion Face Renderer: Utilize the predicted 3DMM coefficients to generate motion vectors for latent facial keypoints, animating the facial image.
               <p>
                   Please refer to our paper for more details.
               </p>
@@ -247,7 +246,7 @@
             <div class="columns is-vcentered interpolation-panel">
               <div class="column is-4 has-text-centered">
                 <img src="./static/images/cremad-1.png" alt="Image Alt Text" height="80%">
-                <p>cremad ref image</p>
+                <p>Source Image</p>
               </div>
               <div class="column is-4 has-text-centered">
                 <video id="teaser1" autoplay muted loop playsinline height="80%">
@@ -265,7 +264,7 @@
             <div class="columns is-vcentered interpolation-panel">
               <div class="column is-4 has-text-centered">
                 <img src="./static/images/cremad-2.png" alt="Image Alt Text" height="80%">
-                <p>cremad ref image</p>
+                <p>Source Image</p>
               </div>
               <div class="column is-4 has-text-centered">
                 <video id="teaser1" autoplay muted loop playsinline height="80%">
@@ -283,7 +282,7 @@
             <div class="columns is-vcentered interpolation-panel">
               <div class="column is-4 has-text-centered">
                 <img src="./static/images/cremad-3.png" alt="Image Alt Text" height="80%">
-                <p>cremad ref image</p>
+                <p>Source Image</p>
               </div>
               <div class="column is-4 has-text-centered">
                 <video id="teaser1" autoplay muted loop playsinline height="80%">
@@ -360,7 +359,7 @@
             </div>
             <input class="slider is-fullwidth is-large is-info"
                    id="interpolation-slider"
-                   step="1" min="2" max="14" value="7" type="range">
+                   step="0" min="2" max="14" value="8" type="range">
           </div>
           <div class="column is-4 has-text-centered">
             <video id="teaser12" autoplay muted loop playsinline height="80%">
@@ -377,7 +376,7 @@
 </section>
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@InProceedings{Gan_2023_ICCV,
@@ -389,7 +388,7 @@
         pages     = {22634-22645}
     }</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
   <footer class="footer">
